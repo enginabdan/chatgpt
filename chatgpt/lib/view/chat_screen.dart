@@ -130,7 +130,8 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() => questionAnswers
         .add(QuestionAnswer(question: question, answer: StringBuffer())));
 
-    final detailedPrompt = '''
+    final detailedPrompt =
+        '''
     Act as a professional and talented dream interpreter. 
     Please check the grammar of the input (the user's dream). 
     Interpret the dream in detail and always provide answers in Turkish.
