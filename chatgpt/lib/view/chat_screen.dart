@@ -130,7 +130,8 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() => questionAnswers
         .add(QuestionAnswer(question: question, answer: StringBuffer())));
 
-    final detailedPrompt = '''
+    final detailedPrompt =
+        '''
     Act as a professional and talented dream interpreter. 
     Please check the grammar of the input (the user's dream). 
     Interpret the dream in detail and always provide answers in Turkish.
@@ -154,10 +155,7 @@ class _ChatScreenState extends State<ChatScreen> {
       stream: true,
       maxTokens: 500,
       temperature: 1,
-      // model: ChatGptModel.textGpt35Turbo,
       model: ChatGptModel.textDavinci003,
-      // model: ChatGptModel.gpt_3_5_turbo,
-      // model: ChatGptModel.davinci,
     );
     await _streamResponse(testRequest)
         .whenComplete(() => loadingNotifier.value = true);
