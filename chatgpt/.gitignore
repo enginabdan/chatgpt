@@ -1,4 +1,4 @@
 # Project exclude paths
 .dart_tool
 build
-/Users/engin/D/chatgpt/chatgpt/lib/api_key.dart
+lib/api_key.dart
