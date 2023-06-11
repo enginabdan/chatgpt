@@ -2,3 +2,4 @@
 .dart_tool
 build
 api_key.dart
+chatgpt/lib/api_key.dart
