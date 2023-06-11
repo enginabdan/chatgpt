@@ -1,4 +1,0 @@
-# Project exclude paths
-.dart_tool
-build
-lib/api_key.dart
