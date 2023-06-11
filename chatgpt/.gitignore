@@ -2,4 +2,4 @@
 .dart_tool
 build
 api_key.dart
-../api_key.dart
+../lib/api_key.dart
