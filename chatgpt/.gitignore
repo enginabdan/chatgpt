@@ -2,3 +2,4 @@
 .dart_tool
 build
 lib/api_key.dart
+lib/theme.dart
