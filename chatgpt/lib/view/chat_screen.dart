@@ -53,7 +53,7 @@ class _ChatScreenState extends State<ChatScreen> {
         shadowColor: Colors.white12,
         centerTitle: true,
         title: Text(
-          "ChatGPT",
+          "Rüya ~ Tabircisi",
           style: kWhiteText.copyWith(fontSize: 20, fontWeight: kSemiBold),
         ),
         backgroundColor: kBg300Color,
@@ -130,8 +130,7 @@ class _ChatScreenState extends State<ChatScreen> {
     setState(() => questionAnswers
         .add(QuestionAnswer(question: question, answer: StringBuffer())));
 
-    final detailedPrompt =
-        '''
+    final detailedPrompt = '''
     Act as a professional and talented dream interpreter. 
     Please check the grammar of the input (the user's dream). 
     Interpret the dream in detail and always provide answers in Turkish.
@@ -153,7 +152,7 @@ class _ChatScreenState extends State<ChatScreen> {
     final testRequest = CompletionRequest(
       prompt: [detailedPrompt],
       stream: true,
-      maxTokens: 1000,
+      maxTokens: 500,
       temperature: 1,
       // model: ChatGptModel.textGpt35Turbo,
       model: ChatGptModel.textDavinci003,

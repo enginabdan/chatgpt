@@ -33,7 +33,7 @@ class TextInputWidget extends StatelessWidget {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: kBg100Color,
-                hintText: 'Type in...',
+                hintText: 'Rüyanız...',
                 hintStyle: kWhiteText.copyWith(fontSize: 16),
                 border: InputBorder.none,
                 contentPadding: const EdgeInsets.only(left: 12.0),
